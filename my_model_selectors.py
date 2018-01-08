@@ -91,7 +91,7 @@ class SelectorBIC(ModelSelector):
                     min_bic = bic
                     best_model = model
             except Exception as e:
-                print(e)
+                pass
         return best_model
 
 
@@ -126,7 +126,7 @@ class SelectorDIC(ModelSelector):
                     max_dic = dic
                     best_model = model
             except Exception as e:
-                print(e)
+                pass
         return best_model
 
 
@@ -157,5 +157,5 @@ class SelectorCV(ModelSelector):
                     max_cv_score = avg_cv_score
                     best_model = model
             except Exception as e:
-                print(e)
+                pass
         return best_model
