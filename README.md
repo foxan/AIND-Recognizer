@@ -2,6 +2,17 @@
 ## Probabilistic Models
 ## Project: Sign Language Recognition System
 
+## Summary
+
+The goal of this project is to build a word recognizer for American Sign Language video sequences, demonstrating the power of probabalistic models. In particular, this project employs [hidden Markov models (HMM's)](https://en.wikipedia.org/wiki/Hidden_Markov_model) to analyze a series of measurements taken from videos of American Sign Language (ASL) collected for research (see the [RWTH-BOSTON-104 Database](http://www-i6.informatik.rwth-aachen.de/~dreuw/database-rwth-boston-104.php)).
+
+Besides feature selection and model training, multiple methods are also explored for model selection in order to tune the number of states for each word HMM prior to testing on unseen data, including:
+- Log likelihood using cross-validation folds (CV)
+- Bayesian Information Criterion (BIC)
+- Discriminative Information Criterion (DIC)
+
+---
+
 ### Install
 
 This project requires **Python 3** and the following Python libraries installed:
